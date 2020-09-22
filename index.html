@@ -5,123 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Дом Наркомфина — Википедия</title>
 
-    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      * {
-        font-family: "PT Sans Caption", sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        width: 800px;
-        margin: 0 auto;
-      }
-
-      .header-title {
-        margin: 80px 0 36px;
-        font-size: 42px;
-        line-height: 45px;
-        font-weight: bold;
-      }
-
-      .header-sub-title {
-        font-size: 22px;
-        line-height: 32px;
-        margin-bottom: 52px;
-        color: rgba(0, 0, 0, 0.4);
-      }
-
-      .header-image {
-        width: 90%;
-        max-width: 1920px;
-        margin: 90px auto;
-        display: block;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 34px;
-      }
-
-      ul {
-        list-style-type: none;
-      }
-
-      ul li {
-        margin-bottom: 30px;
-        font-size: 20px;
-      }
-
-      ul li::before {
-        content: "•";
-        margin-right: 14px;
-      }
-
-      .section-title {
-        font-size: 32px;
-        line-height: 36px;
-        margin-bottom: 28px;
-      }
-
-      .section-sub-title {
-        font-size: 28px;
-        line-height: 34px;
-        margin-bottom: 28px;
-      }
-
-      .mb-52 {
-        margin-bottom: 52px;
-      }
-
-      .mb-56 {
-        margin-bottom: 56px;
-      }
-
-      .mt-56 {
-        margin-top: 56px;
-      }
-
-      .quote {
-        margin-left: -20px;
-      }
-
-      blockquote {
-        border-left: 3px solid #000;
-        padding: 5px 0 5px 20px;
-      }
-
-      blockquote p {
-        display: inline;
-        font-style: italic;
-      }
-
-      @media all and (max-width: 899px) {
-        .container {
-          width: 300px;
-          padding: 0 16px;
-        }
-        img {
-          width: 100% !important;
-        }
-      }
-    </style>
-
-    <script
-      src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"
-      async
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="#">Дом Наркомфина</a></li>
+        <li><a href="#history">История создания</a></li>
+        <li><a href="#ideology">Идеология</a></li>
+        <li><a href="#uchastok">Участок</a></li>
+        <li>
+          <a href="#architecture">Архитектура</a>
+          <ul>
+            <li><a href="#sostav">Состав жилого комплекса</a></li>
+          </ul>
+        </li>
+        <li><a href="#organ">Пространственная организация комплекса</a></li>
+        <li><a href="#zhilovo">Архитектура жилого дома</a></li>
+      </ul>
+    </nav>
     <div class="container">
       <h1 class="header-title scroll-reveal">Дом Наркомфина</h1>
       <p class="header-sub-title scroll-reveal">
@@ -145,7 +53,7 @@
       alt="Дом Наркомфина"
     />
     <div class="container">
-      <div style="margin-bottom: 64px">
+      <div style="margin-bottom: 64px" id="history">
         <h2 class="section-title scroll-reveal">История создания</h2>
         <p class="body-text scroll-reveal">
           Дом Наркомфина, или 2-й дом Совнаркома РСФСР, стал одним из
@@ -160,7 +68,7 @@
           типизации были проектами ОСА (Объединения современных архитекторов).
         </p>
       </div>
-      <div class="mt-56">
+      <div class="mt-56" id="ideology">
         <h2 class="section-title scroll-reveal">Идеология</h2>
         <p class="mb-52 scroll-reveal">
           Идеи, связанные с планировочной и объемной структурой, также как и с
@@ -198,7 +106,7 @@
         </p>
       </div>
 
-      <div class="mt-56">
+      <div class="mt-56" id="uchastok">
         <h2 class="section-title scroll-reveal">Участок</h2>
         <p class="mb56 scroll-reveal">
           Под строительство дома для работников Наркомата финансов в апреле 1929
@@ -214,15 +122,17 @@
         </p>
       </div>
 
-      <div class="mt-56">
+      <div class="mt-56" id="architecture">
         <h2 class="section-title scroll-reveal">Архитектура</h2>
-        <h3 class="section-sub-title scroll-reveal">Состав жилого комплекса</h3>
+        <h3 class="section-sub-title scroll-reveal" id="sostav">
+          Состав жилого комплекса
+        </h3>
         <p class="mb-52 scroll-reveal">
           В проектной документации дом именовался 2-м домом СНК. Согласно
           проекту, комплекс должен был состоять из четырех корпусов:
         </p>
         <div class="mb-52">
-          <ul>
+          <ul class="list">
             <li class="scroll-reveal">
               коммунального, соединенного с жилым теплым навесным переходом: с
               кухней, двумя столовыми — крытой внутри и летней на крыше, а также
@@ -242,7 +152,7 @@
             </li>
           </ul>
         </div>
-        <p class="mb-56 scroll-reveal">
+        <p class="mb-56 scroll-reveal" id="organ">
           Также планировалось, что рядом с домом Наркомфина будет построен
           второй жилой дом с большими квартирами — ячейками типа К или D. Не
           реализован.
@@ -262,7 +172,9 @@
           строение при строительстве дома Наркомфина не снесли. Под домом течет
           река Синичка, заключенная в трубу.
         </p>
-        <h3 class="section-sub-title scroll-reveal">Архитектура жилого дома</h3>
+        <h3 class="section-sub-title scroll-reveal" id="zhilovo">
+          Архитектура жилого дома
+        </h3>
         <p class="mb-56 scroll-reveal">
           Архитектура жилого корпуса была для конца 1920-х годов необычна и
           впечатляюща, особенно если учесть его старомосковское окружение.
@@ -276,6 +188,15 @@
       </div>
     </div>
 
+    <script
+      src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"
+      async
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script>
       $(window).on("load", () => {
         window.sr = ScrollReveal({
@@ -286,9 +207,9 @@
           distance: "35px",
         });
 
-        sr.reveal(".scroll-reveal", {
-          interval: 100,
-        });
+        // sr.reveal(".scroll-reveal", {
+        //   interval: 100,
+        // });
       });
     </script>
   </body>

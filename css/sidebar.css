@@ -1,0 +1,41 @@
+nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  padding: 30px;
+  width: 300px;
+  background: #fff;
+  opacity: 0.1;
+  transition: opacity 0.2s ease;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+nav ul li {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+nav ul li ul li {
+  margin-left: 10px;
+}
+
+nav ul li ul li:first-child {
+  margin-top: 20px;
+}
+
+nav ul li ul li:last-child {
+  margin-bottom: 0;
+}
+
+nav ul li ul li a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
